@@ -592,7 +592,7 @@ calcnpde<-function(isuj,yobs,matsim,nrep,decorr.method,verbose) {
 		ycal<-rowMeans(tcomp)
 		pde<-ycal
 	}
-	return(list(xerr=xerr,pde=pde,ydsim=ydsim,ydobs=ydobs,ypred=moysim))
+	return(list(xerr=xerr,pde=pde,ydsim=ydsim,ydobs=ydobs,ypred=moysim,ewres=decobs))
 }
 
 decorr.chol<-function(x) {
